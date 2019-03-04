@@ -1,0 +1,4 @@
+= Fit Writer
+:toc:
+
+A TypeScript-powered library to write Fit files.
