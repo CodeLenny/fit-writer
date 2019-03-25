@@ -53,5 +53,5 @@ You can't use fields only allowed in the `file_id` record inside activity record
 Editor support for parameters::
 Your editor may be able to describe the desired parameters, and perform smart autocompletion with variables that match the desired types.
 +++<details><summary>Example</summary><p>+++
-image::doc/img/autocomplete-fields.png[Example of autocompletion in an IDE]
+image:doc/img/autocomplete-fields.png[Example of autocompletion in an IDE]
 +++</p></details>+++
