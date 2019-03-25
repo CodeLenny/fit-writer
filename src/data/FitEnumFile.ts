@@ -7,6 +7,7 @@ import FitEnum from "./FitEnum";
 export default class FitEnumFile extends FitEnum {
 
     private readonly __enum_file = "file";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdTypeField = "fileIdTypeField";
 
 }

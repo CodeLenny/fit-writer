@@ -12,6 +12,7 @@ export default class FitDateTime extends FitData implements fields {
 
     private readonly value: number;
     private readonly __date = "date";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdTimeCreatedField = "fileIdTimeCreatedField";
 
     constructor(value: number) {

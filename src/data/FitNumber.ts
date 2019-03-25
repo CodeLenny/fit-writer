@@ -9,6 +9,7 @@ export default class FitNumber extends FitData implements fields {
 
     private readonly value: number;
     private readonly __number = "number";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdTypeField = "fileIdTypeField";
     readonly __fileIdProductField = "fileIdProductField";
     readonly __fileIdSerialNumberField = "fileIdSerialNumberField";

@@ -9,6 +9,7 @@ type Fields = FitFileIdManufacturerField;
 export default class FitEnumManufacturer extends FitEnum {
 
     private readonly __enum_manufacturer = "manufacturer";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdManufacturerField = "fileIdManufacturerField";
 
 }

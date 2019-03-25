@@ -3,10 +3,12 @@ import FitFieldDefinition from "../FitFieldDefinition";
 import FitBaseType from "../FitBaseType";
 import FitUint16 from "../baseType/FitUint16";
 import FitFileIdMessage from "./FitFileIdMessage";
+import FitFileIdField from "./FitFileIdField";
 
-export default class FitFileIdProductField implements FitField {
+export default class FitFileIdProductField implements FitField, FitFileIdField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdProductField = "fileIdProductField";
 
     static createDefinition(): FitFileIdProductFieldDefinition
@@ -20,6 +22,7 @@ export default class FitFileIdProductField implements FitField {
 export class FitFileIdProductFieldDefinition extends FitFieldDefinition implements FitFileIdProductField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdProductField = "fileIdProductField";
 
     constructor()

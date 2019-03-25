@@ -4,10 +4,12 @@ import FitBaseType from "../FitBaseType";
 import FitFileIdMessage from "./FitFileIdMessage";
 import FitEnum from "../baseType/FitEnum";
 import FitEnumFile, { FitEnumFileDevice, FitEnumFileSettings, FitEnumFileSport, FitEnumFileActivity, FitEnumFileWorkout, FitEnumFileCourse, FitEnumFileSchedules, FitEnumFileWeight, FitEnumFileTotals, FitEnumFileGoals, FitEnumFileBloodPressure, FitEnumFileMonitoringA, FitEnumFileActivitySummary, FitEnumFileMonitoringB, FitEnumFileSegment, FitEnumFileSegmentList, FitEnumFileExdConfiguration } from "../data/FitEnumFile";
+import FitFileIdField from "./FitFileIdField";
 
-export default class FitFileIdTypeField implements FitField {
+export default class FitFileIdTypeField implements FitField, FitFileIdField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdTypeField = "fileIdTypeField";
 
     static createDefinition(): FitFileIdTypeFieldDefinition
@@ -97,6 +99,7 @@ export default class FitFileIdTypeField implements FitField {
 export class FitFileIdTypeFieldDefinition extends FitFieldDefinition implements FitFileIdTypeField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdTypeField = "fileIdTypeField";
 
     constructor()

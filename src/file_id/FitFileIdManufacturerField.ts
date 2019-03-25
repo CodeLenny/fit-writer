@@ -54,10 +54,12 @@ import { FitEnumManufacturerGarmin, FitEnumManufacturerGarminFr405Antfs, FitEnum
     FitEnumManufacturerKineticByKurt, FitEnumManufacturerShapeLog, FitEnumManufacturerDabuziduo,
     FitEnumManufacturerJetBlack, FitEnumManufacturerCoros, FitEnumManufacturerVirtugo, FitEnumManufacturerVelosense,
     FitEnumManufacturerCycligentInc, FitEnumManufacturerTrailforks, FitEnumManufacturerActiGraphCorp} from "../data/FitEnumManufacturer";
+import FitFileIdField from "./FitFileIdField";
 
-export default class FitFileIdManufacturerField implements FitField {
+export default class FitFileIdManufacturerField implements FitField, FitFileIdField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdManufacturerField = "fileIdManufacturerField";
 
     static createDefinition(): FitFileIdManufacturerFieldDefinition
@@ -735,6 +737,7 @@ export default class FitFileIdManufacturerField implements FitField {
 export class FitFileIdManufacturerFieldDefinition extends FitFieldDefinition implements FitFileIdManufacturerField {
 
     readonly __field = "field";
+    readonly __fileIdField = "fileIdField";
     readonly __fileIdManufacturerField = "fileIdManufacturerField";
 
     constructor()
